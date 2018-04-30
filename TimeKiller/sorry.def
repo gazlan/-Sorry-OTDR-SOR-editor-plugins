@@ -1,0 +1,40 @@
+LIBRARY     SORRY.EXE
+
+EXPORTS
+    CHK_FixCkSum                   @1   ; CHK_FixCkSum
+    CHK_GetCkSumOriginal           @2   ; CHK_GetCkSumOriginal
+    CHK_SetCkSum                   @3   ; CHK_SetCkSum
+    DB_KillSession                 @4   ; DB_KillSession
+    DB_LoadSession                 @5   ; DB_LoadSession
+    DB_SaveSession                 @6   ; DB_SaveSession
+    DIR_BrowseForFolder            @7   ; DIR_BrowseForFolder
+    FILE_GetLatestFileTimeByHandle @8   ; FILE_GetLatestFileTimeByHandle
+    FILE_GetLatestFileTimeByName   @9   ; FILE_GetLatestFileTimeByName
+    FILE_OpenFileReadOnly          @10  ; FILE_OpenFileReadOnly
+    FILE_SetFileTSbyHandle         @11  ; FILE_SetFileTSbyHandle
+    FILE_SetFileTSbyName           @12  ; FILE_SetFileTSbyName
+    FILE_SetFileTimeStampUTC       @13  ; FILE_SetFileTimeStampUTC
+    FXD_GetSorTime                 @14  ; FXD_GetSorTime
+    FXD_GetSorTimeOriginal         @15  ; FXD_GetSorTimeOriginal
+    FXD_SetSorTime                 @16  ; FXD_SetSorTime
+    KRNL_GetFileTime               @17  ; KRNL_GetFileTime
+    KRNL_GetPluginPath             @18  ; KRNL_GetPluginPath
+    KRNL_Load                      @19  ; KRNL_Load
+    KRNL_Save                      @20  ; KRNL_Save
+    KRNL_SetFileTime               @21  ; KRNL_SetFileTime
+    KRNL_SetSilenceMode            @22  ; KRNL_SetSilenceMode
+    KRNL_Time_Local_2_Local        @23  ; KRNL_Time_Local_2_Local
+    KRNL_Time_Local_2_UTC          @24  ; KRNL_Time_Local_2_UTC
+    KRNL_Time_UTC_2_Local          @25  ; KRNL_Time_UTC_2_Local
+    KRNL_Walker                    @26  ; KRNL_Walker
+    KRNL_Write                     @27  ; KRNL_Write
+    KRNL_WriteFile                 @28  ; KRNL_WriteFile
+    MAP_CalcHash16                 @29  ; MAP_CalcHash16
+    MAP_CalcHash16File             @30  ; MAP_CalcHash16File
+    MAP_GetFileMD5SignatureOriginal @31  ; MAP_GetFileMD5SignatureOriginal
+    OPT_GetTimeZoneShift           @32  ; OPT_GetTimeZoneShift
+    OPT_SetFixedDelayMin           @33  ; OPT_SetFixedDelayMin
+    OPT_SetFixedDelayRandom        @34  ; OPT_SetFixedDelayRandom
+    OPT_SetFixedDelaySec           @35  ; OPT_SetFixedDelaySec
+    OPT_SetFixedTSstrType          @36  ; OPT_SetFixedTSstrType
+    OPT_SetTimeZoneShift           @37  ; OPT_SetTimeZoneShift

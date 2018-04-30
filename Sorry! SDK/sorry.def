@@ -1,0 +1,46 @@
+LIBRARY     SORRY.EXE
+
+EXPORTS
+    CHK_FixCkSum                   @1   ; CHK_FixCkSum
+    CHK_GetCkSumOriginal           @2   ; CHK_GetCkSumOriginal
+    CHK_SetCkSum                   @3   ; CHK_SetCkSum
+    DB_KillSession                 @4   ; DB_KillSession
+    DB_LoadSession                 @5   ; DB_LoadSession
+    DB_SaveSession                 @6   ; DB_SaveSession
+    DIR_BrowseForFolder            @7   ; DIR_BrowseForFolder
+    FILE_GetLatestFileTimeByHandle @8   ; FILE_GetLatestFileTimeByHandle
+    FILE_GetLatestFileTimeByName   @9   ; FILE_GetLatestFileTimeByName
+    FILE_OpenFileReadOnly          @10  ; FILE_OpenFileReadOnly
+    FILE_SetFileTSbyHandle         @11  ; FILE_SetFileTSbyHandle
+    FILE_SetFileTSbyName           @12  ; FILE_SetFileTSbyName
+    FILE_SetFileTimeStampUTC       @13  ; FILE_SetFileTimeStampUTC
+    FXD_GetSorTime                 @14  ; FXD_GetSorTime
+    FXD_GetSorTimeOriginal         @15  ; FXD_GetSorTimeOriginal
+    FXD_SetSorTime                 @16  ; FXD_SetSorTime
+    KRNL_AppendBlackList           @17  ; KRNL_AppendBlackList
+    KRNL_AppendWhiteList           @18  ; KRNL_AppendWhiteList
+    KRNL_ClearBlackList            @19  ; KRNL_ClearBlackList
+    KRNL_ClearWhiteList            @20  ; KRNL_ClearWhiteList
+    KRNL_EnsureWhiteList           @21  ; KRNL_EnsureWhiteList
+    KRNL_GetFileTime               @22  ; KRNL_GetFileTime
+    KRNL_GetPluginPath             @23  ; KRNL_GetPluginPath
+    KRNL_Load                      @24  ; KRNL_Load
+    KRNL_Save                      @25  ; KRNL_Save
+    KRNL_SetFileTime               @26  ; KRNL_SetFileTime
+    KRNL_SetSilenceMode            @27  ; KRNL_SetSilenceMode
+    KRNL_StripBlackList            @28  ; KRNL_StripBlackList
+    KRNL_Time_Local_2_Local        @29  ; KRNL_Time_Local_2_Local
+    KRNL_Time_Local_2_UTC          @30  ; KRNL_Time_Local_2_UTC
+    KRNL_Time_UTC_2_Local          @31  ; KRNL_Time_UTC_2_Local
+    KRNL_Walker                    @32  ; KRNL_Walker
+    KRNL_Write                     @33  ; KRNL_Write
+    KRNL_WriteFile                 @34  ; KRNL_WriteFile
+    MAP_CalcHash16                 @35  ; MAP_CalcHash16
+    MAP_CalcHash16File             @36  ; MAP_CalcHash16File
+    MAP_GetFileMD5SignatureOriginal @37  ; MAP_GetFileMD5SignatureOriginal
+    OPT_GetTimeZoneShift           @38  ; OPT_GetTimeZoneShift
+    OPT_SetFixedDelayMin           @39  ; OPT_SetFixedDelayMin
+    OPT_SetFixedDelayRandom        @40  ; OPT_SetFixedDelayRandom
+    OPT_SetFixedDelaySec           @41  ; OPT_SetFixedDelaySec
+    OPT_SetFixedTSstrType          @42  ; OPT_SetFixedTSstrType
+    OPT_SetTimeZoneShift           @43  ; OPT_SetTimeZoneShift

@@ -1,0 +1,306 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "FileDate-2-SorDate\0"
+            VALUE "CompanyName", "Sorry!\0"
+            VALUE "FileDescription", "Set internal SOR date some as SOR-file File date\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "FileDate-2-SorDate\0"
+            VALUE "LegalCopyright", "Copyright © Gazlan, 2014\0"
+            VALUE "LegalTrademarks", "gazlan@yandex.ru\0"
+            VALUE "OriginalFilename", "FileDate2SorDate.dll\0"
+            VALUE "PrivateBuild", "Hereby placed in the public domain.\0"
+            VALUE "ProductName", "FileDate-2-SorDate\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "Sorry! plugins system.\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DATE_UPDATER DIALOG DISCARDABLE  0, 0, 249, 158
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Set internal SOR date some as SOR-file File date"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Year",IDC_CHK_YEAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,9,28,8
+    EDITTEXT        IDC_EDT_YEAR,37,7,22,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_YEAR2,60,7,22,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_CMB_YEAR,7,23,75,333,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "&Month",IDC_CHK_MONTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,85,9,33,8
+    EDITTEXT        IDC_EDT_MONTH,120,7,20,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_MONTH2,142,7,20,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_CMB_MONTH,87,23,75,333,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "&Day",IDC_CHK_DAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    165,9,33,8
+    EDITTEXT        IDC_EDT_DAY,200,7,20,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_DAY2,222,7,20,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_CMB_DAY,167,23,75,333,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Before",IDC_STATIC,7,42,35,8
+    CONTROL         "DateTimePicker1",IDC_DT_DATE1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,51,39,69,14
+    LTEXT           "After",IDC_STATIC,129,42,35,8
+    CONTROL         "DateTimePicker2",IDC_DT_DATE2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,173,39,69,14
+    CONTROL         "In the  DATEs range",IDC_RB_IN,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,57,107,8
+    CONTROL         "Out of the DATEs range",IDC_RB_OUT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,129,57,107,8
+    EDITTEXT        IDC_EDT_PATH,7,70,217,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_FILE,228,69,14,14
+    CONTROL         "Recur&sively",IDC_CHK_RECURSIVELY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,89,52,8
+    CONTROL         "&Report",IDC_CHK_REPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,63,89,39,8
+    CONTROL         "&Only",IDC_CHK_ONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,106,88,30,10
+    LTEXT           "TimeZone shift, hrs",IDC_STATIC,140,89,62,8
+    EDITTEXT        IDC_EDT_LOCAL,209,87,33,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPN_LOCAL,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,232,88,10,12
+    EDITTEXT        IDC_EDT_REPORT,7,104,217,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_REPORT,228,103,14,14
+    CONTROL         "Reset &all time fields",IDC_CHK_RESET_TIME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,124,79,8
+    DEFPUSHBUTTON   "&Go!",IDC_BTN_RUN,192,121,50,14
+    CTEXT           "* READY *",IDC_STT_STATUS,7,139,235,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DATE_UPDATER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DATE_UPDATER DLGINIT
+BEGIN
+    IDC_CMB_YEAR, 0x403, 4, 0
+0x4e41, 0x0059, 
+    IDC_CMB_YEAR, 0x403, 2, 0
+0x003e, 
+    IDC_CMB_YEAR, 0x403, 3, 0
+0x3d3e, "\000" 
+    IDC_CMB_YEAR, 0x403, 3, 0
+0x3d3d, "\000" 
+    IDC_CMB_YEAR, 0x403, 3, 0
+0x3d21, "\000" 
+    IDC_CMB_YEAR, 0x403, 3, 0
+0x3d3c, "\000" 
+    IDC_CMB_YEAR, 0x403, 2, 0
+0x003c, 
+    IDC_CMB_YEAR, 0x403, 19, 0
+0x6e49, 0x7420, 0x6568, 0x7920, 0x6165, 0x7372, 0x7220, 0x6e61, 0x6567, 
+"\000" 
+    IDC_CMB_YEAR, 0x403, 23, 0
+0x754f, 0x2074, 0x666f, 0x7420, 0x6568, 0x7920, 0x6165, 0x7372, 0x7220, 
+0x6e61, 0x6567, "\000" 
+    IDC_CMB_YEAR, 0x403, 1, 0
+"\000" 
+    IDC_CMB_MONTH, 0x403, 4, 0
+0x4e41, 0x0059, 
+    IDC_CMB_MONTH, 0x403, 2, 0
+0x003e, 
+    IDC_CMB_MONTH, 0x403, 3, 0
+0x3d3e, "\000" 
+    IDC_CMB_MONTH, 0x403, 3, 0
+0x3d3d, "\000" 
+    IDC_CMB_MONTH, 0x403, 3, 0
+0x3d21, "\000" 
+    IDC_CMB_MONTH, 0x403, 3, 0
+0x3d3c, "\000" 
+    IDC_CMB_MONTH, 0x403, 2, 0
+0x003c, 
+    IDC_CMB_MONTH, 0x403, 19, 0
+0x6e49, 0x7420, 0x6568, 0x6d20, 0x6e6f, 0x7374, 0x7220, 0x6e61, 0x6567, 
+"\000" 
+    IDC_CMB_MONTH, 0x403, 23, 0
+0x754f, 0x2074, 0x666f, 0x7420, 0x6568, 0x6d20, 0x6e6f, 0x7374, 0x7220, 
+0x6e61, 0x6567, "\000" 
+    IDC_CMB_DAY, 0x403, 4, 0
+0x4e41, 0x0059, 
+    IDC_CMB_DAY, 0x403, 2, 0
+0x003e, 
+    IDC_CMB_DAY, 0x403, 3, 0
+0x3d3e, "\000" 
+    IDC_CMB_DAY, 0x403, 3, 0
+0x3d3d, "\000" 
+    IDC_CMB_DAY, 0x403, 3, 0
+0x3d21, "\000" 
+    IDC_CMB_DAY, 0x403, 3, 0
+0x3d3c, "\000" 
+    IDC_CMB_DAY, 0x403, 2, 0
+0x003c, 
+    IDC_CMB_DAY, 0x403, 18, 0
+0x6e49, 0x7420, 0x6568, 0x6420, 0x7961, 0x2073, 0x6172, 0x676e, 0x0065, 
+
+    IDC_CMB_DAY, 0x403, 22, 0
+0x754f, 0x2074, 0x666f, 0x7420, 0x6568, 0x6420, 0x7961, 0x2073, 0x6172, 
+0x676e, 0x0065, 
+    0
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FileDate2SorDate.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\FileDate2SorDate.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

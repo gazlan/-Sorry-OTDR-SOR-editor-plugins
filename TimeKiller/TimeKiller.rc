@@ -1,0 +1,235 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "FileTime Successive Killer\0"
+            VALUE "CompanyName", "Sorry!\0"
+            VALUE "FileDescription", "Successively update file's TimeStamp\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "TimeKiller\0"
+            VALUE "LegalCopyright", "Copyright © Gazlan, 2014\0"
+            VALUE "LegalTrademarks", "gazlan@yandex.ru\0"
+            VALUE "OriginalFilename", "TimeKiller.dll\0"
+            VALUE "PrivateBuild", "Hereby placed in the public domain.\0"
+            VALUE "ProductName", "TimeKiller\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "Sorry! plugins system.\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TIME_UPDATER DIALOG DISCARDABLE  0, 0, 272, 162
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Successively update file's TimeStamp"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDT_PATH,7,7,239,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_FILE,250,6,14,14
+    LTEXT           "Base date",IDC_STATIC,7,24,40,8
+    CONTROL         "DateTimePicker1",IDC_DTP_DATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_APPCANPARSE | WS_TABSTOP,52,22,50,
+                    12
+    PUSHBUTTON      "&Now",IDC_BTN_NOW,107,36,70,12
+    LTEXT           "Base time",IDC_STATIC,7,38,40,8
+    EDITTEXT        IDC_EDT_HOURS,52,36,14,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_MINUTES,70,36,14,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDT_SECONDS,88,36,14,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Set as &First file TS",IDC_BTN_AS_FIRST,179,36,85,12
+    GROUPBOX        "TimeZone",IDC_STATIC,7,50,257,28
+    CONTROL         "&Change TZ shift only, hrs",IDC_CHK_CHANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,62,90,10
+    EDITTEXT        IDC_EDT_CHANGE,110,61,14,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "+ TS",IDC_RB_SHIFT_PLUS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,130,63,30,8
+    CONTROL         "- TS",IDC_RB_SHIFT_MINUS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,166,63,30,8
+    CONTROL         "Recur&sively",IDC_CHK_RECURSIVELY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,202,63,54,8
+    PUSHBUTTON      "+1min",IDC_BTN_PLUS1,7,83,42,14
+    PUSHBUTTON      "+ 2 min",IDC_BTN_PLUS2,50,83,42,14
+    PUSHBUTTON      "+ 5 min",IDC_BTN_PLUS5,93,83,42,14
+    PUSHBUTTON      "+ 10 min",IDC_BTN_PLUS10,136,83,42,14
+    PUSHBUTTON      "+ 15 min",IDC_BTN_PLUS15,179,83,42,14
+    PUSHBUTTON      "+ 30 min",IDC_BTN_PLUS30,222,83,42,14
+    LTEXT           "TZ shift, hrs",IDC_STATIC,7,101,50,8
+    EDITTEXT        IDC_EDT_LOCAL,66,99,50,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPN_LOCAL,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,117,99,10,12
+    CONTROL         "&Report",IDC_CHK_REPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,148,101,45,8
+    CONTROL         "&Only",IDC_CHK_ONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,101,45,8
+    EDITTEXT        IDC_EDT_REPORT,7,113,239,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_REPORT,250,112,14,14
+    LTEXT           "Successive time delay, min",IDC_STATIC,7,129,92,8
+    EDITTEXT        IDC_EDT_SHIFT,101,127,40,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "+ 30 sec random &delay",IDC_CHK_DELAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,172,129,92,8
+    CTEXT           "* READY *",IDC_STT_STATUS,70,142,143,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    DEFPUSHBUTTON   "&Go!",IDC_BTN_RUN,219,141,45,14
+    EDITTEXT        IDC_EDT_1ST,129,22,135,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "1st:",IDC_STATIC,107,24,18,8
+    CONTROL         "Finish ALERT",IDC_CHK_ALERT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,143,57,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TIME_UPDATER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TimeKiller.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TimeKiller.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
